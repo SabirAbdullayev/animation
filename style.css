@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#umumi{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+#umumi div{
+    position: absolute;
+}
+#arena{
+    width: 100%;
+    height: 100%;
+    background-image: url("img/Galatasaray_Arena_North-West_Corner.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#muslera{
+    bottom: 0;
+    left: -340px;
+    width: 200px;
+    height: 200px;
+    background-image: url("img/muslera.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: 2;
+    animation-name: Muslera;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+#selcuk{
+    bottom: 0;
+    right: -300px;
+    width: 200px;
+    height: 200px;
+    background-image: url("img/selcuk.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: 2;
+    animation-name: Selcuk;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+#onyekuru{
+    bottom: 150px;
+    right: -250px;
+    width: 200px;
+    height: 200px;
+    background-image: url("img/onyekuru.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: 2;
+    animation-name: Onyekuru;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+#omer{
+    bottom: 150px;
+    left: -250px;
+    width: 200px;
+    height: 200px;
+    background-image: url("img/omer.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: 2;
+    animation-name: Omer;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+#luyindama{
+    bottom: 250px;
+    right: -200px;
+    width: 200px;
+    height: 200px;
+    background-image: url("img/luyindama.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: 2;
+    animation-name: Luyindama;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+#falcao{
+    bottom: 250px;
+    left: -200px;
+    width: 200px;
+    height: 200px;
+    background-image: url("img/falcao_render__galatasaray__by_tychorenders_ddg5u58-fullview.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: 2;
+    animation-name: Falcao;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+#terim{
+    transform: translate(-50%,0);
+    left: 50%;
+    top: -100px;
+    width: 300px;
+    height: 300px;
+    background-image: url("img/terim.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: 2;
+    animation-name: Terim;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+#yazi{
+    transform: rotate(-180deg);
+    right: -570px;
+    top: 50px;
+    width: 470px;
+    height: 170px;
+    z-index: 2;
+    animation-name: yazi;
+    animation-duration: 3s;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    font: 900 60px/20px Arial;
+    color: #A90432;
+    text-shadow: 1px 1px 3px #FDB912;
+}
+#logo{
+    top: -300px;
+    bottom: 0;
+    left: 85%;
+    width: 220px;
+    height: 274px;
+    background-image: url("img/logo.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: 2;
+    animation-name: Logo;
+    animation-duration: 3s;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+#sampiyon{
+    font-size: 50px;
+    font-weight: 100;
+    animation: hello 0.5s ease-in-out infinite;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+}
+
+
+@keyframes hello {
+    0% {
+      font-weight: 100;
+      color: #FDB912;
+    }
+    50% {
+      font-weight: 900;
+      color: #A90432;
+    }
+    100% {
+      font-weight: 100;
+      color: #FDB912;
+    }
+  }
+
+
+
+@keyframes Logo{
+    from{
+        top: -300px;
+    }
+    to{
+        top: 45%;
+    }
+}
+
+@keyframes Muslera{
+    from{
+        left: -340px;
+    }
+    to{
+        left: 50%;
+    }
+}
+@keyframes Selcuk{
+    from{
+        right: -300px;
+    }
+    to{
+        right: 50%;
+    }
+}
+@keyframes Onyekuru{
+    from{
+        right: -250px;
+    }
+    to{
+        right: 60%;
+    }
+}
+@keyframes Omer{
+    from{
+        left: -250px;
+    }
+    to{
+        left: 60%;
+    }
+}
+@keyframes Luyindama{
+    from{
+        right: -200px;
+    }
+    to{
+        right: 70%;
+    }
+}
+@keyframes Falcao{
+    from{
+        left: -200px;
+    }
+    to{
+        left: 70%;
+    }
+}
+@keyframes Terim{
+    from{
+        top: -100px;
+    }
+    to{
+        top: 20%;
+    }
+}
+@keyframes yazi{
+    from{
+        transform: rotate(-180deg);
+        right: -570px;
+    }
+    to{
+        transform: rotate(0deg);
+        right: 425px;
+    }
+}
+
